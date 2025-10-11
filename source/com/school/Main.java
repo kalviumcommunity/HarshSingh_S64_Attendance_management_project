@@ -1,33 +1,26 @@
 package com.school;
 
 public class Main {
+    private static int nextCourseIdCounter = 1;
     public static void main(String[] args) {
         // Array of Students
         Student[] students = new Student[2];
-        students[0] = new Student();
-        students[0].setDetails(1, "Alice");
-        students[1] = new Student();
-        students[1].setDetails(2, "Bob");
-
+        students[0] = new Student("Alice");
+        students[1] = new Student("Bob");
 
         // Array of Courses
         Course[] courses = new Course[2];
-        courses[0] = new Course();
-        courses[0].setDetails(101, "Mathematics");
-        courses[1] = new Course();
-        courses[1].setDetails(102, "Physics");
-
+        courses[0] = new Course ("Java Fundamentals" );
+        courses[1] = new Course("Java Fundamentals");
 
         System.out.println("=== Students ===");
         for (Student student : students) {
             student.displayDetails();
         }
 
-
         System.out.println("\n=== Courses ===");
         for (Course course : courses) {
             course.displayDetails();
         }
-
     }
 }
