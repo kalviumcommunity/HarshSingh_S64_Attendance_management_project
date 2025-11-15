@@ -10,11 +10,20 @@ public class Student {
         this.name = name;
     }
 
-    public void setDeatails(int studentId, String name) {
+    public void setDetails(int studentId, String name) {
         this.studentId = studentId;
         this.name = name;
     }
+    public int getStudentId() {
+        return this.studentId;
+    }
+    
+    public String getName() {
+        return this.name;
+    }
+    
     public void displayDetails() {
         System.out.println("Student ID: " + this.studentId + ", Name: " + this.name);
     }
+    
 }
