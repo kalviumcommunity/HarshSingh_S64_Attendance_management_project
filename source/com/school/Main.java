@@ -1,5 +1,4 @@
 package com.school;
-import java.util.List;
 import java.util.ArrayList;
 
 public class Main {
@@ -16,7 +15,7 @@ public class Main {
 
         System.out.println("=== Students ===");
         for (Student student : students) {
-            student.displayDetails();
+
         }
 
         System.out.println("\n=== Courses ===");
